@@ -38,7 +38,9 @@ export default function Form() {
           <label htmlFor="size">Size</label><br />
           <select id="size">
             <option value="">----Choose Size----</option>
-            {/* Fill out the missing options */}
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
           </select>
         </div>
         {true && <div className='error'>Bad value</div>}
