@@ -72,11 +72,17 @@ export default function Form() {
 
   const submit = (evt) => {
     evt.preventDefault();
-    axios.post("http://localhost:9009/api/order", values).then((res) => {
-      setValues(initialValues);
-      setServerSuccess(res.data.message);
-      setServerFailure("");
-    });
+    axios
+      .post("http://localhost:9009/api/order", values)
+      .then((res) => {
+        setValues(initialValues);
+        setServerSuccess(res.data.message);
+        setServerFailure("");
+      })
+      .catch((err) => {
+        setServerSuccess("");
+        serverFailure(err?.response?.data?.message);
+      });
   };
 
   return (
