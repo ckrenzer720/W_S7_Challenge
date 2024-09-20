@@ -9,7 +9,19 @@ const validationErrors = {
 }
 
 // 👇 Here you will create your schema.
-const schema = yup.object().shape()
+const schema = yup.object().shape({
+  fullName: yup
+    .string()
+    .trim()
+    .required()
+    .min(3, validationErrors.fullNameTooShort)
+    .max(20, validationErrors.fullNameTooLong),
+  size: yup
+    .string()
+    .required()
+    .oneOf(["S","M","L", validationErrors.sizeIncorrect])
+})
+
 // 👇 This array could help you construct your checkboxes using .map in the JSX.
 const toppings = [
   { topping_id: '1', text: 'Pepperoni' },
