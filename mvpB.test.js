@@ -36,7 +36,36 @@ describe("Sprint 7 Challenge Learner Tests", () => {
     [5] renders a text that reads "JavaScript is pretty awesome"
     [6] renders a text that includes "javaScript is pretty" (use exact = false)
   */
-
+  describe("<HelloWorld />", () => {
+    beforeEach(() => {
+      render(<HelloWorld />);
+    });
+    test('renders a link that reads "Home"', () => {
+      const home = screen.getByText("Home");
+      expect(home).toBeInTheDocument();
+    });
+    test('renders a link that reads "About"', () => {
+      const about = screen.getByText("About");
+      expect(about).toBeInTheDocument();
+    });
+    test('renders a link that reads "Blog"', () => {
+      const blog = screen.getByText("Blog");
+      expect(blog).toBeInTheDocument();
+    });
+    test('renders a text that reads "The Truth"', () => {
+      expect(screen.getByText("The Truth")).toBeInTheDocument();
+    });
+    test(' renders a text that reads "JavaScript is pretty awesome"', () => {
+      expect(
+        screen.getByText("JavaScript is pretty awesome")
+      ).toBeInTheDocument();
+    });
+    test('renders a text that includes "javaScript is pretty"', () => {
+      expect(
+        screen.getByText("javaScript is pretty", { exact: false })
+      ).toBeInTheDocument();
+    });
+  });
   // test('you can comment out this test', () => {
   //   expect(true).toBe(false)
   // })
