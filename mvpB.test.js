@@ -16,11 +16,14 @@ describe("Sprint 7 Challenge Learner Tests", () => {
   */
   test("throws an error if no valid numbers are passed", () => {
     expect(() => sum()).toThrowError("pass valid numbers");
+  });
+  test("throws an error if some valid numbers are passed", () => {
     expect(() => sum(2, "seven")).toThrowError("pass valid numbers");
   });
-  expect(sum(1, 3)).toEqual(4);
+
   expect(sum("1", 2)).toEqual(3);
   expect(sum("10", "3")).toEqual(13);
+  expect(sum(1, 3)).toEqual(4);
 
   /*
   👉 TASK 2 - Integration Testing of HelloWorld component at the bottom of this module
@@ -55,7 +58,7 @@ describe("Sprint 7 Challenge Learner Tests", () => {
     test('renders a text that reads "The Truth"', () => {
       expect(screen.getByText("The Truth")).toBeInTheDocument();
     });
-    test(' renders a text that reads "JavaScript is pretty awesome"', () => {
+    test('renders a text that reads "JavaScript is pretty awesome"', () => {
       expect(
         screen.getByText("JavaScript is pretty awesome")
       ).toBeInTheDocument();
