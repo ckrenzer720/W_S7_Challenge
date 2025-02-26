@@ -134,7 +134,7 @@ export default function Form() {
           </label>
         ))}
       </div>
-      <input type="submit" disabled={!enabled} />
+      <input type="submit" />
     </form>
   );
 }
