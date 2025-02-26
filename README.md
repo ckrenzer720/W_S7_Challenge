@@ -1,21 +1,20 @@
-🍕 Pizza Order App
+# 🍕 **Pizza Order App**
 
-📌 Overview
+## 📌 **Overview**
 
-This project is a fully functional pizza ordering application built with React. It features:
+This project is a fully functional **pizza ordering application** built with React. It features:
 
-🚀 React Router Integration: Smooth navigation between pages.
+- **🚀 React Router Integration** - Smooth navigation between pages.
+- **📝 Interactive Order Form** - Select pizza size, choose toppings, and submit orders.
+- **✅ Form Validation** - Ensures correct input using Yup.
+- **🔗 API Communication** - Sends order data to the backend.
+- **🧪 Automated Testing** - Uses Jest and React Testing Library.
 
-📝 Interactive Order Form: Select pizza size, choose toppings, and submit orders.
+---
 
-✅ Form Validation: Ensures correct input using Yup.
+## 📂 **Project Structure**
 
-🔗 API Communication: Sends order data to the backend.
-
-🧪 Automated Testing: Uses Jest and React Testing Library.
-
-📂 Project Structure
-
+```plaintext
 frontend/
 │── components/
 │   ├── App.js       # Main application with routing
@@ -29,63 +28,73 @@ frontend/
 backend/
 │── server.js        # API endpoint for processing orders
 │── database/        # Mock database for storing orders
+```
 
-⚙️ Setup Instructions
+---
 
-1️⃣ Clone the repository
+## ⚙️ **Setup Instructions**
 
+### 1️⃣ Clone the repository
+```sh
 git clone <repo-url>
 cd <project-folder>
+```
 
-2️⃣ Install dependencies
-
+### 2️⃣ Install dependencies
+```sh
 npm install
+```
 
-3️⃣ Run the development server
-
+### 3️⃣ Run the development server
+```sh
 npm run dev
+```
 
-4️⃣ Run tests
-
+### 4️⃣ Run tests
+```sh
 npm test
+```
 
-5️⃣ Access the application
+### 5️⃣ Access the application
 
-Open http://localhost:3003 in your browser.
+Open [**http://localhost:3003**](http://localhost:3003) in your browser.
 
-🔗 API Endpoint
+---
 
-URL: [POST] http://localhost:9009/api/order
+## 🔗 **API Endpoint**
 
-Example Payload:
+- **URL**: `[POST] http://localhost:9009/api/order`
+- **Example Payload**:
+  ```json
+  {
+    "fullName": "Jane Doe",
+    "size": "L",
+    "toppings": ["1", "2", "3"]
+  }
+  ```
+- **Validation Rules**:
+  - `fullName`: Required, 3-20 characters (excluding whitespace padding).
+  - `size`: Required, must be "S", "M", or "L".
+  - `toppings`: Optional, can only include valid topping IDs (1-5).
 
-{ "fullName": "Jane Doe", "size": "L", "toppings": ["1", "2", "3"] }
+---
 
-Validation Rules:
+## 🛠 **Development Notes**
 
-fullName: Required, 3-20 characters (excluding whitespace padding).
+- **🛤 Routing** - Implemented in `App.js` with `BrowserRouter` (routes for Home `/` and Order `/order`).
+- **📝 Form Submission** - Handled in `Form.js`, with input fields mapped to API requirements.
+- **🧪 Testing** - Ensures application stability and compliance with expected behavior.
 
-size: Required, must be "S", "M", or "L".
+---
 
-toppings: Optional, can only include valid topping IDs (1-5).
+## 🤝 **How to Contribute**
 
-🛠 Development Notes
+1. **Fork** the repository and create a **new branch**.
+2. Implement your **feature or bug fix**.
+3. Ensure **tests pass** before submitting.
+4. Create a **pull request** with a detailed description of your changes.
 
-🛤 Routing: Implemented in App.js with BrowserRouter (routes for Home / and Order /order).
+---
 
-📝 Form Submission: Handled in Form.js, with input fields mapped to API requirements.
-
-🧪 Testing: Ensures application stability and compliance with expected behavior.
-
-🤝 How to Contribute
-
-Fork the repository and create a new branch.
-
-Implement your feature or bug fix.
-
-Ensure tests pass before submitting.
-
-Create a pull request with a detailed description of your changes.
-
-This project demonstrates fundamental React skills in a real-world application scenario, making it an excellent showcase for frontend development expertise. 🚀
+> **This project demonstrates fundamental React skills in a real-world application scenario, making it an excellent showcase for frontend development expertise. 🚀**
 
