@@ -35,25 +35,35 @@ backend/
 ## ⚙️ **Setup Instructions**
 
 ### 1️⃣ Clone the repository
+<<<<<<< HEAD
 
+=======
+>>>>>>> 31f0b45763f679e48c2e4374f514accd8e6ea807
 ```sh
 git clone <repo-url>
 cd <project-folder>
 ```
 
 ### 2️⃣ Install dependencies
+<<<<<<< HEAD
 
+=======
+>>>>>>> 31f0b45763f679e48c2e4374f514accd8e6ea807
 ```sh
 npm install
 ```
 
 ### 3️⃣ Run the development server
+<<<<<<< HEAD
 
+=======
+>>>>>>> 31f0b45763f679e48c2e4374f514accd8e6ea807
 ```sh
 npm run dev
 ```
 
 ### 4️⃣ Run tests
+<<<<<<< HEAD
 
 ```sh
 npm test
@@ -101,3 +111,52 @@ Open [**http://localhost:3003**](http://localhost:3003) in your browser.
 ---
 
 > **This project demonstrates fundamental React skills in a real-world application scenario, making it an excellent showcase for frontend development expertise. 🚀**
+=======
+```sh
+npm test
+```
+
+### 5️⃣ Access the application
+
+Open [**http://localhost:3003**](http://localhost:3003) in your browser.
+
+---
+
+## 🔗 **API Endpoint**
+
+- **URL**: `[POST] http://localhost:9009/api/order`
+- **Example Payload**:
+  ```json
+  {
+    "fullName": "Jane Doe",
+    "size": "L",
+    "toppings": ["1", "2", "3"]
+  }
+  ```
+- **Validation Rules**:
+  - `fullName`: Required, 3-20 characters (excluding whitespace padding).
+  - `size`: Required, must be "S", "M", or "L".
+  - `toppings`: Optional, can only include valid topping IDs (1-5).
+
+---
+
+## 🛠 **Development Notes**
+
+- **🛤 Routing** - Implemented in `App.js` with `BrowserRouter` (routes for Home `/` and Order `/order`).
+- **📝 Form Submission** - Handled in `Form.js`, with input fields mapped to API requirements.
+- **🧪 Testing** - Ensures application stability and compliance with expected behavior.
+
+---
+
+## 🤝 **How to Contribute**
+
+1. **Fork** the repository and create a **new branch**.
+2. Implement your **feature or bug fix**.
+3. Ensure **tests pass** before submitting.
+4. Create a **pull request** with a detailed description of your changes.
+
+---
+
+> **This project demonstrates fundamental React skills in a real-world application scenario, making it an excellent showcase for frontend development expertise. 🚀**
+
+>>>>>>> 31f0b45763f679e48c2e4374f514accd8e6ea807
