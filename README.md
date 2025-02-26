@@ -1,20 +1,20 @@
-### 🍕 Pizza Order App
+🍕 Pizza Order App
 
-## 📌 Overview:
+📌 Overview
 
 This project is a fully functional pizza ordering application built with React. It features:
 
-# 🚀 React Router Integration: Smooth navigation between pages.
+🚀 React Router Integration: Smooth navigation between pages.
 
-# 📝 Interactive Order Form: Select pizza size, choose toppings, and submit orders.
+📝 Interactive Order Form: Select pizza size, choose toppings, and submit orders.
 
-# ✅ Form Validation: Ensures correct input using Yup.
+✅ Form Validation: Ensures correct input using Yup.
 
-# 🔗 API Communication: Sends order data to the backend.
+🔗 API Communication: Sends order data to the backend.
 
-# 🧪 Automated Testing: Uses Jest and React Testing Library.
+🧪 Automated Testing: Uses Jest and React Testing Library.
 
-## 📂 Project Structure
+📂 Project Structure
 
 frontend/
 │── components/
@@ -30,30 +30,30 @@ backend/
 │── server.js        # API endpoint for processing orders
 │── database/        # Mock database for storing orders
 
-## ⚙️ Setup Instructions
+⚙️ Setup Instructions
 
-# 1️⃣ Clone the repository
+1️⃣ Clone the repository
 
 git clone <repo-url>
 cd <project-folder>
 
-# 2️⃣ Install dependencies
+2️⃣ Install dependencies
 
 npm install
 
-# 3️⃣ Run the development server
+3️⃣ Run the development server
 
 npm run dev
 
-# 4️⃣ Run tests
+4️⃣ Run tests
 
 npm test
 
-# 5️⃣ Access the application
+5️⃣ Access the application
 
 Open http://localhost:3003 in your browser.
 
-## 🔗 API Endpoint
+🔗 API Endpoint
 
 URL: [POST] http://localhost:9009/api/order
 
@@ -88,3 +88,4 @@ Ensure tests pass before submitting.
 Create a pull request with a detailed description of your changes.
 
 This project demonstrates fundamental React skills in a real-world application scenario, making it an excellent showcase for frontend development expertise. 🚀
+
