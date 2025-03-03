@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "fkill :9009 :3003 -f -s && concurrently \"npm:backend\" \"npm:frontend\"",
     "test": "jest --watchAll --verbose",
-    "build": "build": "[my-framework] build --output public",
+    "build": "react-scripts build",
     "frontend": "webpack serve --open",
     "backend": "node backend/server.js",
     "start": "npm run backend",
